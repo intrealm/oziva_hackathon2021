@@ -14,8 +14,9 @@ router.get('/game', async function (req,resp,next)
 router.post('/incomingrewards', async function(req,res,next)
 {  
   console.log(req.body);
+  
   console.log('raising update rewards');
-  rewardService.updateRewards(req.name,req.phone,req.coins);
+  rewardService.updateRewards(req.body.name,req.body.phone,req.body.coins);
   res.send('ok');
 });
 
