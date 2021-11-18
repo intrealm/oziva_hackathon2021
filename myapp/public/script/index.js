@@ -38,7 +38,7 @@ let isJunk = setInterval(function () {
 
   
     if ((obstacleLeft <= 190   && obstacleLeft >= 100) && characterTop > 800) {
-        alert('game over')
+        // alert('game over')
     }
 
     if((coinLeft <= -300  && coinLeft >= -330) && characterTop < 800){
