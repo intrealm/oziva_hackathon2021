@@ -22,12 +22,13 @@ document.addEventListener("keydown", (event)=> {
 
 document.addEventListener("touchstart", touchHandler, false);
 
-function updateLeaderBoard()
+function updateLeaderBoard(userName,userPhone, userCoins)
 {
-    console.log('updating leaderboard');
-    const res = await axios.post('http://localhost:3000/incomingrewards',    
+    console.log('updating leaderboard',axios);
+            axios.post("http://localhost:3000/incomingrewards",       {name:name,phone:userPhone,coins:userCoins });
+    /*const res = await axios.post('http://localhost:3000/incomingrewards',    
         {name:"vanish",phone:"1231231990",coins:"25"}  
-    );
+    );*/
 
 }
 
