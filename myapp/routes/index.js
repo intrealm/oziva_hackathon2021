@@ -7,7 +7,7 @@ var rewardService  = require('../services/rewardService');
 var router = express.Router();
 
 
-router.get('/incomingrewards', async function(req,res,next)
+router.post('/incomingrewards', async function(req,res,next)
 {  
   const paylaod = JSON.parse(req.body);
 rewardService.updateRewards(payload.name,payload.phone,payload.coins);
