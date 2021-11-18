@@ -1,5 +1,5 @@
 body {
-  padding: 50px;
+  /* padding: 50px; */
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -159,16 +159,18 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url("/assets/BG Iphone.svg");
+  background: url("/assets/BG Iphone.svg") no-repeat content-box;
   background-size: cover;
+  position: relative;
 }
 
 .character img {
   width: auto;
   height: 13vh;
-  position: relative;
-  top: 24vh;
-  right: 25vw;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .jump {
@@ -196,19 +198,18 @@ td {
 .obstacle img {
   width: auto;
   height: 6vh;
-  position: relative;
-  top: 220px;
-  left: 400px;
-
+  position: absolute;
+  bottom: 10px;
+  right: 0px;
   animation: slide 1.5s infinite linear;
 }
 
 @keyframes slide {
   0% {
-    left: 400px;
+    left: 850px;
   }
   100% {
-    left: -500px;
+    left: -50px;
   }
 }
 
