@@ -209,3 +209,31 @@ td {
     left: -500px;
   }
 }
+
+.coin-one img {
+  width: auto;
+  height: 4vh;
+  position: relative;
+  top: 80px;
+  left: 150px;
+
+  animation: coin-slide 2s infinite linear;
+}
+
+/* .coin-two img {
+  width: auto;
+  height: 4vh;
+  position: relative;
+  top: 120px;
+  left: 400px;
+  animation: coin-slide 2.5s infinite linear;
+} */
+
+@keyframes coin-slide {
+  0% {
+    left: 400px;
+  }
+  100% {
+    left: -500px;
+  }
+}
