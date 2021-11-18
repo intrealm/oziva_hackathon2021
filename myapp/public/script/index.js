@@ -21,9 +21,16 @@ let isJunk = setInterval(function () {
     console.log('top:', characterTop);
 
     let obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue('left'))
-    console.log('left:',obstacleLeft);
+
+    let coinLeft = parseInt(window.getComputedStyle(coin).getPropertyValue('left'));
+    console.log("coin left", coinLeft);
+
   
     if ((obstacleLeft <= -230  && obstacleLeft >= -360) && characterTop > 160) {
-      alert("Game Over!");
+      console.log('Game over');
+    }
+
+    if((coinLeft <= -70  && coinLeft >= -100) && characterTop < 160){
+        console.log('coin hit');
     }
   }, 100);
