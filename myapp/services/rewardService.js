@@ -10,6 +10,7 @@ const rewardService = {
         client.connect(
             async err=>
             {
+                console.log('raising update rewards');
             let userInfo = await client.db("ozivarundb").collection("userinfo").findOne({'phone':phone});
 
             console.log(userInfo);
