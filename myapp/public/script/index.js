@@ -15,7 +15,7 @@ function jump(){
 
 document.addEventListener("keydown", (event)=> {
     event.preventDefault();
-    if (event.code === 'Space') {
+    if (e.keyCode == 0 || e.keyCode == 32) {
         jump();
       }
 })
@@ -38,7 +38,7 @@ let isJunk = setInterval(function () {
 
   
     if ((obstacleLeft <= 190   && obstacleLeft >= 100) && characterTop > 800) {
-        console.log('game over')
+        alert('game over')
     }
 
     if((coinLeft <= -300  && coinLeft >= -330) && characterTop < 800){
