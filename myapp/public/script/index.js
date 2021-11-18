@@ -1,6 +1,6 @@
 const character = document.querySelector('.character img')
 const obstacle = document.querySelector('.obstacle img')
-const coin = document.querySelector('.coin')
+const coin = document.querySelector('.coin-one img')
 
 function jump(){
     if(character.classList != 'jump'){
@@ -13,7 +13,9 @@ function jump(){
 }
 
 document.addEventListener("keydown", (event)=> {
-    jump();
+    if (event.code === 'Space') {
+        jump();
+      }
 })
 
 let isJunk = setInterval(function () {
