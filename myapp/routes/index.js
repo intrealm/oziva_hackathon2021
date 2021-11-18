@@ -9,7 +9,8 @@ var router = express.Router();
 
 router.get('/incomingrewards', async function(req,res,next)
 {  
-rewardService.updateRewards('arpit','1234567890',10);
+  const paylaod = JSON.parse(req.body);
+rewardService.updateRewards(payload.name,payload.phone,payload.coins);
 
 });
 
