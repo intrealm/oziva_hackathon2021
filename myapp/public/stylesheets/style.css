@@ -154,11 +154,12 @@ td {
 .game {
   height: 60vh;
   width: 65vw;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #e1dedb;
   margin: auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("/assets/bg.svg");
 }
 
 .character img {
