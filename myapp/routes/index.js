@@ -2,11 +2,6 @@ var express = require('express');
 var rewardService  = require('../services/rewardService');
 var router = express.Router();
 
-router.get('/game', async function (req,resp,next)
-{
-  resp.render('game',{title : 'hello'});
-})
-
 router.post('/incomingrewards', async function(req,res,next)
 {  
   console.log(req.body);
