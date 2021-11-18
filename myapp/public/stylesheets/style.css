@@ -174,34 +174,28 @@ td {
 }
 
 .jump {
-  animation: jump 0.4s ease-in-out;
+  animation: jump 0.5s ease;
 }
 
 @keyframes jump {
   0% {
-    top: 200px;
-  }
-  30% {
-    top: 130px;
+    bottom: 0px;
   }
   50% {
-    top: 80px;
-  }
-  70% {
-    top: 130px;
+    bottom: 250px;
   }
   100% {
-    top: 200px;
+    bottom: 0px;
   }
 }
 
 .obstacle img {
   width: auto;
-  height: 6vh;
+  height: 4vh;
   position: absolute;
   bottom: 10px;
   right: 0px;
-  animation: slide 1.5s infinite linear;
+  animation: slide 2s infinite linear;
 }
 
 @keyframes slide {
@@ -209,7 +203,7 @@ td {
     left: 850px;
   }
   100% {
-    left: -50px;
+    left: -20px;
   }
 }
 
@@ -217,10 +211,10 @@ td {
   width: auto;
   height: 4vh;
   position: relative;
-  top: 80px;
+  top: 320px;
   left: 150px;
 
-  animation: coin-slide 2s infinite linear;
+  animation: coin-slide 1.3s infinite linear;
 }
 
 /* .coin-two img {

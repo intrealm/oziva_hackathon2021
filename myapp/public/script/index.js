@@ -2,6 +2,7 @@ const character = document.querySelector('.character img')
 const obstacle = document.querySelector('.obstacle img')
 const coin = document.querySelector('.coin-one img')
 
+
 function jump(){
     if(character.classList != 'jump'){
         character.classList.add("jump");
@@ -27,19 +28,20 @@ function touchHandler(){
 
 let isJunk = setInterval(function () {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'))
-    console.log('top:', characterTop);
+    // console.log('top:', characterTop);
 
     let obstacleLeft = parseInt(window.getComputedStyle(obstacle).getPropertyValue('left'))
+    // console.log("burger left", obstacleLeft);
 
     let coinLeft = parseInt(window.getComputedStyle(coin).getPropertyValue('left'));
-    console.log("coin left", coinLeft);
+    // console.log("coin left", coinLeft);
 
   
-    if ((obstacleLeft <= -230  && obstacleLeft >= -360) && characterTop > 160) {
-      console.log('Game over');
+    if ((obstacleLeft <= 190   && obstacleLeft >= 100) && characterTop > 800) {
+        console.log('game over')
     }
 
-    if((coinLeft <= -70  && coinLeft >= -100) && characterTop < 160){
+    if((coinLeft <= -300  && coinLeft >= -330) && characterTop < 800){
         console.log('coin hit');
     }
   }, 100);
