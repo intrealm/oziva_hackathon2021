@@ -33,14 +33,14 @@ router.get('/leaderboard', async function(req, res, next) {
     {
       let resp  = client.db("ozivarundb").collection("userinfo").find().limit(10).sort( {coin : -1} );
       console.log(await resp.count());
-      let leaders = [];
-      await   resp.forEach(element => {
-        leaders.push(element);
+      let leadersList = [];
+      await resp.forEach(element => {
+        leadersList.push(element);
         console.log(element);
       });
-      console.log(leaders);
+      console.log(leadersList);
 
-      res.render('leaderboard', { title: 'oZiva virtual run leaderboard' ,leaders});
+      res.render('leaderboard', { title: 'oZiva virtual run leaderboard' ,leaders:leadersList});
 
     }
   );
