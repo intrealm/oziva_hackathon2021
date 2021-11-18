@@ -13,10 +13,17 @@ function jump(){
 }
 
 document.addEventListener("keydown", (event)=> {
+    event.preventDefault();
     if (event.code === 'Space') {
         jump();
       }
 })
+
+document.addEventListener("touchstart", touchHandler, false);
+
+function touchHandler(){
+    jump()
+}
 
 let isJunk = setInterval(function () {
     let characterTop = parseInt(window.getComputedStyle(character).getPropertyValue('top'))
