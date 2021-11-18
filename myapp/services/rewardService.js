@@ -1,4 +1,4 @@
-const { MongoClient } = require('mongodb');
+const { MongoClient, ConnectionClosedEvent } = require('mongodb');
 
 
 const uri = "mongodb+srv://newuser:newpassword@ozivarun.0yawr.mongodb.net/ozivarundb?retryWrites=true&w=majority";
@@ -7,18 +7,25 @@ const client = new MongoClient(uri);
 const rewardService = {
     updateRewards : async function(phone,name,coins)
     {
+        console.log('phone'+phone);
+        console.log('name'+name);
+        console.log('coins'+coins);
         client.connect(
             async err=>
             {
+                console.log('raising update rewards');
             let userInfo = await client.db("ozivarundb").collection("userinfo").findOne({'phone':phone});
 
             console.log(userInfo);
+            
 
             if(userInfo)
             {
+                const newCount = Number(userInfo.coins)+Number(coins);
+                console.log('bnew count'+newCount);
                 await client.db("ozivarundb").collection("userinfo").updateOne(userInfo,
                 {
-                    $set:{count:Number(Number(userInfo.coins)+coins)}
+                    $set:{coins:newCount}
                 });
             }
             else 
