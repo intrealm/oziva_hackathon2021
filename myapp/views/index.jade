@@ -3,3 +3,11 @@ extends layout
 block content
   h1= title
   p Welcome to #{title}
+  .game-container
+  .game
+    .coin
+    .character
+      img(src='./assets/ziva.gif' alt='Ziva')
+    .obstacle
+      img(src='./assets/french-fries.svg' alt='french fries')
+      script(src="/script/index.js")

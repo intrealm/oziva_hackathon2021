@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="37.967" height="37.967" viewBox="0 0 37.967 37.967">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Path_8472" data-name="Path 8472" d="M967.174,107.4a12.62,12.62,0,0,0-8.98-3.722h0a12.7,12.7,0,0,0,0,25.4h0a12.7,12.7,0,0,0,8.983-21.68Z" transform="translate(-945.491 -103.683)" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="-0.02" y1="0.789" x2="-0.02" y2="1.579" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.1" stop-color="#fff" stop-opacity="0.98"/>
+      <stop offset="0.223" stop-color="#fff" stop-opacity="0.922"/>
+      <stop offset="0.358" stop-color="#fff" stop-opacity="0.82"/>
+      <stop offset="0.502" stop-color="#fff" stop-opacity="0.682"/>
+      <stop offset="0.654" stop-color="#fff" stop-opacity="0.506"/>
+      <stop offset="0.811" stop-color="#fff" stop-opacity="0.29"/>
+      <stop offset="0.971" stop-color="#fff" stop-opacity="0.039"/>
+      <stop offset="0.994" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="-0.84" y1="0.846" x2="-0.84" y2="1.579" xlink:href="#linear-gradient"/>
+  </defs>
+  <g id="Coin" transform="translate(-197.283 -273.295)">
+    <g id="Group_1319" data-name="Group 1319" transform="translate(197.283 273.295)">
+      <g id="Group_1313" data-name="Group 1313" transform="translate(0 0)">
+        <g id="Group_1306" data-name="Group 1306">
+          <circle id="Ellipse_195" data-name="Ellipse 195" cx="18.014" cy="18.014" r="18.014" transform="translate(0.969 0.969)" fill="#fecc0e" stroke="#006e5a" stroke-miterlimit="10" stroke-width="0.641"/>
+          <path id="Path_8469" data-name="Path 8469" d="M950.69,127.866h0a18.983,18.983,0,0,1,0-37.967h0a19.005,19.005,0,0,1,18.98,18.987h0A19,19,0,0,1,950.69,127.866Zm0-36.029a17.045,17.045,0,0,0,0,34.091h0a17.045,17.045,0,0,0,0-34.091ZM968.7,108.886h0Z" transform="translate(-931.707 -89.899)" fill="#006e5a"/>
+        </g>
+        <g id="Group_1307" data-name="Group 1307" transform="translate(1.93 1.93)" opacity="0.6">
+          <path id="Path_8470" data-name="Path 8470" d="M936.71,112.337a17.072,17.072,0,0,1,17.053-17.05h0a16.941,16.941,0,0,1,12.058,5,17.265,17.265,0,0,1,1.763,2.07,17.175,17.175,0,0,0-2.532-3.223,16.943,16.943,0,0,0-12.058-5h0a17.04,17.04,0,0,0-13.827,27.017A16.945,16.945,0,0,1,936.71,112.337Z" transform="translate(-935.941 -94.133)" fill="#fff"/>
+        </g>
+        <g id="Group_1308" data-name="Group 1308" transform="translate(4.622 4.621)">
+          <circle id="Ellipse_196" data-name="Ellipse 196" cx="13.531" cy="13.531" r="13.531" transform="translate(0.83 0.831)" fill="#fecc0e"/>
+          <path id="Path_8471" data-name="Path 8471" d="M956.209,128.762h0a14.362,14.362,0,0,1,0-28.724h0A14.378,14.378,0,0,1,970.57,114.4h0A14.379,14.379,0,0,1,956.209,128.762Zm0-27.063a12.7,12.7,0,0,0,0,25.4h0a12.7,12.7,0,0,0,0-25.4Z" transform="translate(-941.847 -100.038)" fill="#006e5a"/>
+        </g>
+        <g id="Group_1311" data-name="Group 1311" transform="translate(6.283 6.283)">
+          <g id="Group_1310" data-name="Group 1310" clip-path="url(#clip-path)">
+            <g id="Group_1309" data-name="Group 1309" transform="translate(-3.518 -13.869)">
+              <rect id="Rectangle_543" data-name="Rectangle 543" width="7.152" height="43.009" transform="matrix(0.789, 0.615, -0.615, 0.789, 26.45, 0)" opacity="0.6" fill="url(#linear-gradient)"/>
+              <rect id="Rectangle_544" data-name="Rectangle 544" width="3.92" height="43.009" transform="matrix(0.789, 0.615, -0.615, 0.789, 35.338, 8.895)" opacity="0.6" fill="url(#linear-gradient-2)"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_1312" data-name="Group 1312" transform="translate(5.452 5.452)" opacity="0.1">
+          <path id="Path_8473" data-name="Path 8473" d="M945.591,117.7a13.528,13.528,0,0,1,22.907-9.749,13.529,13.529,0,1,0-20.673,17.2A13.465,13.465,0,0,1,945.591,117.7Z" transform="translate(-943.669 -101.861)" fill="#6d4c41"/>
+        </g>
+      </g>
+    </g>
+    <text id="_" data-name="₹" transform="translate(211.267 297.958)" fill="#006e5a" font-size="16" font-family="Bahnschrift"><tspan x="0" y="0">₹</tspan></text>
+  </g>
+</svg>

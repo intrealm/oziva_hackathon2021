@@ -1,24 +1,27 @@
 extends layout
 
 block content
+  //- div
+  //- - console.log("leaders", leaders)
+  //- div
   h1 Oziva leaderboard
     .leaderboard
       header
-        h1 Scoreboard
-        image 
+        //- h1 Scoreboard
+        img.className#IdName(src="/assets/scoreboard_img.png" alt="Scoreboard")
         nav
-          a.active(href='') Solo
+          a.active(href='') Scoreboard
       table
         thead
           tr
             th.rank Rank
             th.nick Name
-            th.sp Score
+            th.sp Coin
         tbody
-        - var n = 0;
-        each val in [{name: "Sc0utOP", points: "100"}, {name: "MortaL", points: "99"}, {name: "CarryMinati", points: "98"}, {name: "CarryMinati", points: 97}]
+         - var n = 0;
+        each val in leaders
           tr
             td.rank= ++n
             td.nick= val.name
-            td.sp= val.points
+            td.sp= val.coin
 

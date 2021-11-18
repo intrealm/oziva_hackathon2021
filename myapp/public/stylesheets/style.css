@@ -71,9 +71,9 @@ nav a {
   font-weight: bold;
 }
 
-nav a.active {
+/* nav a.active {
   border-bottom: 4px solid #f0a900;
-}
+} */
 
 nav a:first-child {
   margin-left: 3rem;
@@ -107,6 +107,10 @@ tbody .nick {
 
 tbody tr:nth-child(2n) {
   background-color: #1f232c;
+}
+
+tbody tr {
+  text-transform: capitalize;
 }
 
 .nick {
@@ -144,3 +148,64 @@ td {
   justify-content: center;
 }
 /* #1f232c */
+
+/* game css */
+
+.game {
+  height: 60vh;
+  width: 65vw;
+  border-bottom: 1px solid black;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.character img {
+  width: auto;
+  height: 13vh;
+  position: relative;
+  top: 24vh;
+  right: 25vw;
+}
+
+.jump {
+  animation: jump 0.4s ease-in-out;
+}
+
+@keyframes jump {
+  0% {
+    top: 200px;
+  }
+  30% {
+    top: 130px;
+  }
+  50% {
+    top: 80px;
+  }
+  70% {
+    top: 130px;
+  }
+  100% {
+    top: 200px;
+  }
+}
+
+.obstacle img {
+  width: auto;
+  height: 6vh;
+  position: relative;
+  top: 220px;
+  left: 400px;
+
+  animation: slide 1.5s infinite linear;
+}
+
+@keyframes slide {
+  0% {
+    left: 400px;
+  }
+  100% {
+    left: -500px;
+  }
+}
