@@ -6,4 +6,9 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/leaderboard', function(req, res, next) {
+  res.render('leaderboard', { title: 'oZiva virtual run leaderboard' });
+});
+
+
 module.exports = router;
