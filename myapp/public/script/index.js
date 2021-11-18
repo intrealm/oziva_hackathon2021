@@ -22,6 +22,15 @@ document.addEventListener("keydown", (event)=> {
 
 document.addEventListener("touchstart", touchHandler, false);
 
+function updateLeaderBoard()
+{
+    console.log('updating leaderboard');
+    const res = await axios.post('http://localhost:3000/incomingrewards',    
+        {name:"vanish",phone:"1231231990",coins:"25"}  
+    );
+
+}
+
 function touchHandler(){
     jump()
 }
